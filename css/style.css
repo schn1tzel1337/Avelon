@@ -1,0 +1,830 @@
+@import url(./css/reset.css);
+
+:root {
+  --container-width: 1440px;
+  --btn__background: rgba(249, 249, 249, 0.15);
+  --btn__padding: 16px 32px 16px 32px;
+}
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  height: 132px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 19.5px;
+}
+.nav__search {
+  padding-top: 26px;
+  padding-left: 28px;
+}
+.nav__logo p {
+  color: rgb(34, 32, 46);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-top: 20px;
+}
+.nav__icons {
+  padding-top: 26px;
+  padding-right: 28px;
+}
+.nav__icons img:first-child {
+  padding-right: 16px;
+}
+.nav__line {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 1386px;
+  height: 0;
+  left: 28px;
+  top: 69.5px;
+}
+.nav__list {
+  display: flex;
+  column-gap: 44px;
+  padding-top: 20.5px;
+  /* padding: 45px 382px 20px 383px; */
+  justify-content: center;
+}
+.nav__list a {
+  color: rgb(114, 110, 141);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.all__products-title p {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 400;
+  height: 209px;
+  padding-left: 80px;
+  padding-top: 123px;
+}
+.all_products-background {
+  background: url(../img/products/Page\ Headers.png);
+}
+/* avion__desc   */
+
+.avion__desc {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+.avion__desc__row {
+  display: flex;
+  column-gap: 40px;
+  background: rgb(42, 37, 75);
+}
+
+.avion__desc__content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.avion__desc__title {
+  /* Headings / H2 */
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  max-width: 513px;
+  padding-bottom: 41px;
+}
+.avion__desc__btn {
+  flex-grow: 1;
+  /* Body/Medium */
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.avion__desc__btn button {
+  background: rgba(249, 249, 249, 0.15);
+  padding: 16px 32px;
+}
+.avion__desc__btn a {
+  color: white;
+}
+/* filters */
+
+/* .filters__content {
+  display: flex;
+  flex-direction: column;
+} */
+
+.filters {
+  /* max-width: 385px; */
+  margin: 48px 80px;
+}
+.filters__row {
+  display: flex;
+}
+
+.filter__product {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  font-family: Montserrat;
+  .product__title {
+    font-family: Montserrat;
+    color: rgb(42, 37, 75);
+    padding-bottom: 20px;
+  }
+}
+.filters-items {
+  max-width: 385px;
+  padding-left: 80px;
+  padding-right: 149px;
+  font-size: 16px;
+}
+.filter__product label {
+  padding-bottom: 12px;
+  max-width: 156px;
+}
+.filter__price {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  font-family: Montserrat;
+  .price__title {
+    font-family: Montserrat;
+    color: rgb(42, 37, 75);
+    padding-bottom: 20px;
+  }
+}
+.filter__price label {
+  padding-bottom: 12px;
+}
+.filter__designer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  font-family: Montserrat;
+  .designer__title {
+    font-family: Montserrat;
+    color: rgb(42, 37, 75);
+    padding-bottom: 20px;
+  }
+}
+.filter__designer label {
+  padding-bottom: 12px;
+}
+.avion__desc__text {
+  /* Body / Large */
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  max-width: 602px;
+}
+.all__products-cards {
+  padding-left: 20px;
+}
+.ceramics__card-filters {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+.card-filters {
+  max-width: 305px;
+}
+
+.card-filters h4 {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 24px;
+}
+.card-filters p {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 8px;
+}
+
+/* diff */
+
+.diff__content {
+  margin-left: 86px;
+}
+.diff__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  padding-bottom: 51px;
+}
+.diff__cart {
+  display: flex;
+  justify-content: space-between;
+}
+.diff__cart img {
+  padding-bottom: 16px;
+}
+.diff__cart p {
+  padding-top: 8px;
+  max-width: 270px;
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.diff__cart h4 {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+/* Ceramics */
+
+.ceramics {
+  max-height: 761px;
+}
+
+.ceramics__content {
+  margin-top: 160px;
+  margin-left: 80px;
+}
+.ceramics__title {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  margin-bottom: 33px;
+}
+.ceramics__card {
+  display: flex;
+  column-gap: 20px;
+}
+.card h4 {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 24px;
+}
+.card p {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 8px;
+}
+.ceramics__btn {
+  display: flex;
+  justify-content: center;
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 35px;
+}
+.ceramics__btn button {
+  background: rgb(249, 249, 249);
+  padding: 16px 32px;
+}
+
+/* Products */
+
+.products {
+  max-height: 744px;
+}
+
+.products__content {
+  margin-top: 120px;
+  margin-left: 80px;
+}
+.products__title {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 25px;
+}
+.products__card {
+  display: flex;
+  column-gap: 20px;
+}
+.prod__card h4 {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  padding-top: 24px;
+}
+.prod__card p {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  padding-top: 8px;
+}
+/* form */
+.form {
+  background: rgb(249, 249, 249);
+  margin-top: 48px;
+  padding-top: 52px;
+  padding-bottom: 62px;
+}
+.contentishe {
+  padding-top: 52px;
+  padding-bottom: 62px;
+  background: rgb(255, 255, 255);
+}
+.form__title {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+}
+.form__subtitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.form__subtitle p {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 470px;
+  text-align: center;
+}
+.form__input {
+  display: flex;
+  justify-content: center;
+  padding-top: 72px;
+}
+.form__input input {
+  padding: 17px 205px 17px 32px;
+  background: rgb(249, 249, 249);
+}
+.form__input input::placeholder {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.form__input button {
+  background: rgb(42, 37, 75);
+  padding: 16px 32px 16px 32px;
+  color: white;
+  /* Body/Medium */
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+/* footer */
+.features {
+  padding-top: 137px;
+  position: relative;
+}
+
+.features__content {
+  padding-left: 84px;
+}
+.features__title {
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 514px;
+  padding-bottom: 25px;
+}
+.features__subtitle {
+  color: rgb(80, 89, 119);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 536px;
+  padding-bottom: 196px;
+}
+.features__btn button {
+  font-family: Montserrat;
+  background: rgb(249, 249, 249);
+  padding: var(--btn__padding);
+}
+.features__img img {
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+/* footer */
+.footer {
+  margin-top: 112px;
+  background: rgb(42, 37, 75);
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 58px;
+  padding-bottom: 47.5px;
+  border-bottom: 1px solid rgb(78, 77, 147);
+}
+.menu__list a,
+li {
+  color: white;
+  padding-bottom: 12px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.menu__list span {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.categories__list a,
+li {
+  color: white;
+  padding-bottom: 12px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.categories__list span {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.our__company a,
+li {
+  color: white;
+  padding-bottom: 12px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.our__company span {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+.footer__input input {
+  padding: 20px 267px 20px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: Montserrat;
+}
+.footer__input ::placeholder {
+  color: white;
+  font-family: Montserrat;
+}
+
+.footer__input button {
+  background: rgb(255, 255, 255);
+  color: rgb(42, 37, 75);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 16px 32px 16px 32px;
+}
+.final__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 28px;
+}
+.footer__copyright {
+  padding-top: 76px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.footer__social_networks {
+  padding-top: 76px;
+}
+.footer__social_networks img {
+  padding-right: 24px;
+}
+
+.contact__form {
+  max-width: 627px;
+}
+@media (max-width: 1345px) {
+  .nav__logo p {
+    font-size: 22px;
+  }
+  .nav__list a {
+    font-size: 14px;
+  }
+  .avion__desc__title {
+    font-size: 30px;
+  }
+  .avion__desc__btn button {
+    padding: 14px 23px;
+  }
+  .avion__desc__text {
+    font-size: 16px;
+  }
+  .avion__desc__row {
+    column-gap: 0px;
+  }
+  .diff__title {
+    font-size: 20px;
+  }
+  .diff__cart h4 {
+    font-size: 18px;
+  }
+  .diff__cart p {
+    font-size: 13px;
+  }
+  .ceramics__title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .card h4 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  .products__title {
+    font-size: 26px;
+  }
+  .prod__card h4 {
+    font-size: 18px;
+  }
+  .form__title {
+    font-size: 28px;
+  }
+  .form__subtitle p {
+    font-size: 14px;
+  }
+  .form__input {
+    padding-top: 30px;
+  }
+  .form__input input {
+    padding: 20px 175px 15px 17px;
+  }
+  .form__input input::placeholder {
+    font-size: 14px;
+  }
+  .form__input button {
+    padding: 13px 25px 13px 25px;
+    font-size: 14px;
+  }
+  .features__title {
+    font-size: 20px;
+    min-width: 412px;
+  }
+  .features__subtitle {
+    font-size: 14px;
+    max-width: 500px;
+  }
+  .features__img img {
+    max-width: 600px;
+  }
+  .features__btn button {
+    font-size: 14px;
+    padding: 13px 25px 13px 25px;
+  }
+  .menu__list span {
+    font-size: 14px;
+  }
+  .menu__list a {
+    font-size: 11px;
+  }
+  .categories__list span {
+    font-size: 14px;
+  }
+  .categories__list a,
+  li {
+    font-size: 11px;
+  }
+  .our__company span {
+    font-size: 14px;
+  }
+  .our__company a,
+  li {
+    font-size: 11px;
+  }
+  .footer__title {
+    font-size: 14px;
+  }
+  .footer__input input {
+    padding: 15px 130px 15px 22px;
+  }
+  .footer__input button {
+    padding: 15px 32px 13px 32px;
+  }
+}
+@media (max-width: 1180px) {
+  .diff__cart h4 {
+    font-size: 16px;
+  }
+  .diff__cart p {
+    font-size: 12px;
+  }
+  .cart {
+    max-width: 250px;
+  }
+  .features__img img {
+    max-width: 500px;
+  }
+  .features__subtitle {
+    padding-bottom: 109px;
+  }
+  .features {
+    padding-top: 75px;
+  }
+}
+@media (max-width: 1080px) {
+  .avion__desc__text {
+    font-size: 14px;
+  }
+  .cart {
+    max-width: 235px;
+  }
+  .ceramics__title {
+    font-size: 24px;
+  }
+  .ceramics__btn button {
+    padding: 12px 20px;
+  }
+  .products__title {
+    font-size: 24px;
+  }
+  .features__img img {
+    max-width: 450px;
+  }
+  .features__title {
+    font-size: 18px;
+    max-width: 470px;
+  }
+  .features__subtitle {
+    font-size: 13px;
+    max-width: 440px;
+  }
+  .menu__list {
+    max-width: 140px;
+  }
+  .categories__list {
+    max-width: 120px;
+  }
+  .footer__input input {
+    padding: 15px 60px 15px 22px;
+  }
+  .footer__input button {
+    padding: 12px 5px 12px 7px;
+  }
+  .footer__content {
+    padding-bottom: 30px;
+  }
+  .footer__copyright {
+    padding-top: 45px;
+  }
+  .footer__social_networks {
+    padding-top: 33px;
+  }
+}
+@media (max-width: 972px) {
+  .nav__logo p {
+    font-size: 18px;
+  }
+  .nav__list a {
+    font-size: 12px;
+  }
+  .avion__desc__title {
+    font-size: 24px;
+  }
+  .avion__desc__btn button {
+    padding: 9px 15px;
+  }
+  .avion__desc__btn a {
+    font-size: 12px;
+  }
+  .avion__desc__text {
+    font-size: 12px;
+    max-width: 440px;
+  }
+  .avion__desc__btn {
+    flex-grow: 0;
+    padding-bottom: 130px;
+  }
+  .cart {
+    max-width: 200px;
+  }
+  .prod__card h4 {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .card h4 {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .ceramics__btn button {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+  .prod__card p {
+    font-size: 15px;
+  }
+  .form__title {
+    font-size: 24px;
+  }
+  .form__subtitle p {
+    font-size: 12px;
+  }
+  .form__input input {
+    padding: 12px 119px 11px 10px;
+  }
+  .form__input button {
+    font-size: 12px;
+    padding: 10px 15px 10px 15px;
+  }
+  .features__img img {
+    max-width: 420px;
+  }
+  .features__subtitle {
+    padding-bottom: 55px;
+  }
+  .footer__input input::placeholder {
+    font-size: 12px;
+  }
+  .footer__input button {
+    font-size: 12px;
+    padding: 16px 4px 14px 4px;
+  }
+  .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
