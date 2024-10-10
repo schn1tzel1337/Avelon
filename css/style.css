@@ -617,9 +617,9 @@ li {
 
 .menu-icon-wrapper {
   --time: 0.1s;
-  --width: 30px;
+  --width: 25px;
   --height: 30px;
-  --line-height: 4px;
+  --line-height: 3px;
   --color: #2a254b;
 
   height: var(--height);
@@ -678,6 +678,23 @@ li {
 }
 .nav__toggle-mobile {
   display: none;
+}
+.adaptive__buttons {
+  display: none;
+}
+.cross {
+  display: none;
+}
+.sorting__row {
+  /* display: flex;
+  flex-direction: column; */
+  display: none;
+}
+.sorting__title {
+  font-family: Montserrat;
+}
+.sorting__row label {
+  font-family: Montserrat;
 }
 
 @media (max-width: 1345px) {
@@ -1207,5 +1224,144 @@ li {
   }
   .avion__desc__img img {
     max-width: 320px;
+  }
+}
+@media (max-width: 1150px) {
+  .card-filters img {
+    max-width: 260px;
+  }
+  .card-filters {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1059px) {
+  .filters {
+    margin: 44px 32px;
+  }
+}
+@media (max-width: 964px) {
+  .filters {
+    margin: 41px 10px;
+  }
+}
+@media (max-width: 920px) {
+  .filters {
+    margin-top: 124px;
+  }
+  .adaptive__buttons {
+    display: block;
+    margin-top: 20px;
+  }
+  .buttons__row {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .filter__btn {
+    font-family: Montserrat;
+    background: #f9f9f9;
+    font-size: 16px;
+    padding: 16px 50.5px;
+    color: #2a254b;
+  }
+  .sorting__btn {
+    font-family: Montserrat;
+    background: #f9f9f9;
+    font-size: 16px;
+    padding: 16px 50.5px;
+    color: #2a254b;
+  }
+  .filters--mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    flex-direction: column;
+
+    background-color: azure;
+  }
+  .filters-items {
+    position: fixed;
+    display: none;
+    max-width: unset;
+    padding-left: 350px;
+    padding-top: 100px;
+  }
+  .filters--mobile .product__title {
+    font-size: 20px;
+  }
+  .filters--mobile .filter__product {
+    font-size: 18px;
+  }
+  .filters--mobile .filter__product label {
+    max-width: unset;
+  }
+  .filters--mobile .filter__price {
+    font-size: 18px;
+  }
+  .filters--mobile .price__title {
+    font-size: 20px;
+  }
+  .filters--mobile .filter__designer {
+    font-size: 18px;
+  }
+  .filters--mobile .designer__title {
+    font-size: 20px;
+  }
+  .filters--mobile .cross {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  .sorting--mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    flex-direction: column;
+
+    background-color: azure;
+  }
+  .sort {
+    padding-left: 200px;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sorting__title {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .sort label {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 580px) {
+  .card-filters img {
+    max-width: 230px;
+  }
+  .all__products-title p {
+    font-size: 29px;
+  }
+  .ceramics__card-filters {
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .all__products-cards {
+    padding-left: unset;
+  }
+  .sorting__btn {
+    padding: 20px 30.5px;
+  }
+  .filter__btn {
+    padding: 20px 30.5px;
   }
 }

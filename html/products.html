@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,16 +24,26 @@
         <div class="header__top">
           <div class="nav">
             <div class="nav__search">
-              <a href=""><img src="./img/header/Search.svg" alt="" /></a>
+              <a href=""><img src="./../img/header/Search.svg" alt="" /></a>
             </div>
             <div class="nav__logo">
               <a href="./../index.html"><p>Avelon</p></a>
             </div>
             <div class="nav__icons">
               <a href=""
-                ><img src="./img/header/Shopping--cart.svg" alt=""
+                ><img src="./../img/header/Shopping--cart.svg" alt=""
               /></a>
-              <a href=""><img src="./img/header/User--avatar.svg" alt="" /></a>
+              <a href=""
+                ><img src="./../img/header/User--avatar.svg" alt=""
+              /></a>
+            </div>
+            <div class="nav__toggle-mobile">
+              <a href="#"><img src="./../img/header/Search.svg" alt="" /></a>
+              <button type="button" class="nav__toggle">
+                <div class="menu-icon-wrapper">
+                  <div class="menu-icon"></div>
+                </div>
+              </button>
             </div>
           </div>
           <ul class="nav__list">
@@ -56,10 +66,52 @@
         </div>
       </div>
     </div>
+    <div class="adaptive__buttons">
+      <div class="container">
+        <div class="buttons__row">
+          <button class="filter__btn">
+            Фильтры
+            <img src="./../img/products__filter-icons/Caret--down.svg" alt="" />
+          </button>
+          <button class="sorting__btn">
+            Сортировка
+            <img src="./../img/products__filter-icons/Caret--down.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sorting__list">
+      <div class="container">
+        <div class="sorting__row">
+          <div class="cross">
+            <img src="./../img/filter__krestik/Krestiksvgpng.ru_.svg" alt="" />
+          </div>
+          <div class="sort">
+            <div class="sorting__title">Сортировка</div>
+            <label name="checkbox-02"
+              ><input type="checkbox" /> По возрастанию цены</label
+            >
+            <label name="checkbox-03"
+              ><input type="checkbox" /> По убыванию цены</label
+            >
+            <label name="checkbox-04"
+              ><input type="checkbox" /> По популярности</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="filters">
       <div class="container">
         <div class="filters__row">
           <div class="filters-items">
+            <div class="cross">
+              <img
+                src="./../img/filter__krestik/Krestiksvgpng.ru_.svg"
+                alt=""
+              />
+            </div>
             <div class="filter__product">
               <div class="product__title">Тип продукта</div>
               <label name="checkbox-01">
@@ -183,7 +235,7 @@
             <div class="our__company">
               <ul>
                 <li>
-                  <a href=""><span>Наша компания</span></a>
+                  <a href="#"><span>Наша компания</span></a>
                 </li>
                 <li><a href="">О нас</a></li>
                 <li><a href="">Вакансии</a></li>
@@ -196,29 +248,29 @@
               <div class="footer__title">Присоединяйтесь к нашей рассылке</div>
               <form class="footer__input">
                 <input type="text" placeholder="your@email.com" />
-                <button class="btn__footer">Sign up</button>
+                <button class="btn__footer">Зарегистрироваться</button>
               </form>
             </div>
           </div>
           <div class="final__footer">
             <div class="footer__copyright">Copyright 2024 Avelon LTD</div>
             <div class="footer__social_networks">
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--linkedin.png" alt=""
               /></a>
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--facebook.svg" alt=""
               /></a>
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--instagram.svg" alt=""
               /></a>
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--skype.svg" alt=""
               /></a>
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--twitter.svg" alt=""
               /></a>
-              <a href="#"
+              <a href=""
                 ><img src="./../img/footer/Logo--pinterest.svg" alt=""
               /></a>
             </div>
@@ -227,4 +279,5 @@
       </div>
     </footer>
   </body>
+  <script src="./../js/main.js"></script>
 </html>
