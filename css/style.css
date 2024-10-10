@@ -4,10 +4,17 @@
   --container-width: 1440px;
   --btn__background: rgba(249, 249, 249, 0.15);
   --btn__padding: 16px 32px 16px 32px;
+  --container-width: 1440px;
+  --container-padding: 15px;
 }
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
+}
+.container-right {
+  padding-left: calc(
+    (100% - var(--container-width)) / 2 + var(--container-padding)
+  );
 }
 
 /* header */
@@ -75,6 +82,10 @@ header {
 .all_products-background {
   background: url(../img/products/Page\ Headers.png);
 }
+
+.nav__toggle {
+  display: none;
+}
 /* avion__desc   */
 
 .avion__desc {
@@ -85,7 +96,9 @@ header {
 }
 .avion__desc__row {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 40px;
+
   background: rgb(42, 37, 75);
 }
 
@@ -113,7 +126,7 @@ header {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: 0%;
+  padding-bottom: 167px;
 }
 .avion__desc__btn button {
   background: rgba(249, 249, 249, 0.15);
@@ -122,6 +135,7 @@ header {
 .avion__desc__btn a {
   color: white;
 }
+
 /* filters */
 
 /* .filters__content {
@@ -271,7 +285,6 @@ header {
 /* Ceramics */
 
 .ceramics {
-  max-height: 761px;
 }
 
 .ceramics__content {
@@ -324,7 +337,7 @@ header {
 /* Products */
 
 .products {
-  max-height: 744px;
+  /* max-height: 744px; */
 }
 
 .products__content {
@@ -372,13 +385,14 @@ header {
   background: rgb(255, 255, 255);
 }
 .form__title {
+  display: flex;
+  justify-content: center;
+
   color: rgb(42, 37, 75);
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 400;
   line-height: 140%;
-  display: flex;
-  justify-content: center;
 }
 .form__subtitle {
   display: flex;
@@ -394,14 +408,26 @@ header {
   max-width: 470px;
   text-align: center;
 }
+.form__advantage {
+  margin: 0 auto;
+
+  width: 100%;
+}
 .form__input {
   display: flex;
+  flex-grow: 1;
   justify-content: center;
+  width: 100%;
   padding-top: 72px;
 }
 .form__input input {
-  padding: 17px 205px 17px 32px;
+  display: flex;
+  flex-grow: 1;
+  max-width: 400px;
+  width: 100%;
+  padding: 17px 32px 17px 32px;
   background: rgb(249, 249, 249);
+  font-family: Montserrat;
 }
 .form__input input::placeholder {
   color: rgb(42, 37, 75);
@@ -421,10 +447,14 @@ header {
   font-weight: 400;
   line-height: 150%;
 }
-/* footer */
+/* features */
 .features {
   padding-top: 137px;
-  position: relative;
+}
+.features__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
 }
 
 .features__content {
@@ -453,11 +483,7 @@ header {
   background: rgb(249, 249, 249);
   padding: var(--btn__padding);
 }
-.features__img img {
-  position: absolute;
-  right: 0;
-  top: 65px;
-}
+
 /* footer */
 .footer {
   margin-top: 112px;
@@ -465,10 +491,13 @@ header {
   padding-left: 80px;
   padding-right: 80px;
 }
-
+.footer__row {
+}
 .footer__content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
   padding-top: 58px;
   padding-bottom: 47.5px;
   border-bottom: 1px solid rgb(78, 77, 147);
@@ -525,6 +554,10 @@ li {
   font-weight: 400;
   line-height: 20px;
 }
+.contact__form {
+  max-width: 627px;
+  width: 100%;
+}
 .footer__title {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
@@ -533,11 +566,19 @@ li {
   line-height: 20px;
   padding-bottom: 16px;
 }
+.footer__input {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+}
 .footer__input input {
-  padding: 20px 267px 20px 32px;
+  display: flex;
+  flex-grow: 1;
+  padding: 20px 32px 20px 32px;
   background: rgba(255, 255, 255, 0.15);
   color: white;
   font-family: Montserrat;
+  width: 100%;
 }
 .footer__input ::placeholder {
   color: white;
@@ -574,9 +615,71 @@ li {
   padding-right: 24px;
 }
 
-.contact__form {
-  max-width: 627px;
+.menu-icon-wrapper {
+  --time: 0.1s;
+  --width: 30px;
+  --height: 30px;
+  --line-height: 4px;
+  --color: #2a254b;
+
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.menu-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 0;
+
+  width: var(--width);
+  height: var(--line-height);
+
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.menu-icon::before {
+  top: calc(var(--line-height) * -2);
+}
+
+.menu-icon::after {
+  top: calc(var(--line-height) * 2);
+}
+
+.menu-icon.menu-icon--active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon--active::before,
+.menu-icon.menu-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.menu-icon.menu-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.menu-icon.menu-icon--active::after {
+  transform: rotate(-45deg);
+}
+.nav__toggle-mobile {
+  display: none;
+}
+
 @media (max-width: 1345px) {
   .nav__logo p {
     font-size: 22px;
@@ -683,6 +786,46 @@ li {
     padding: 15px 32px 13px 32px;
   }
 }
+@media (max-width: 1224px) {
+  .avion__desc__title {
+    font-size: 25px;
+  }
+  .avion__desc__text {
+    font-size: 15px;
+  }
+  .avion__desc__btn {
+    padding-bottom: 103px;
+  }
+  .avion__desc__btn a {
+    font-size: 13px;
+  }
+  .avion__desc__img img {
+    max-width: 420px;
+  }
+}
+@media (max-width: 1121px) {
+  .avion__desc__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .avion__desc__content {
+    display: flex;
+    align-items: center;
+  }
+  .avion__desc__title {
+    text-align: center;
+  }
+  .avion__desc__text {
+    text-align: center;
+  }
+  .avion__desc__btn {
+    padding-bottom: 50px;
+  }
+  .avion__desc__img img {
+    max-width: 420px;
+  }
+}
 @media (max-width: 1180px) {
   .diff__cart h4 {
     font-size: 16px;
@@ -772,9 +915,15 @@ li {
     font-size: 12px;
     max-width: 440px;
   }
+  .avion__desc__content {
+    /* padding: 30px; */
+  }
+  .avion__desc__img img {
+    max-width: 360px;
+  }
   .avion__desc__btn {
     flex-grow: 0;
-    padding-bottom: 130px;
+    padding-bottom: 50px;
   }
   .cart {
     max-width: 200px;
@@ -826,5 +975,237 @@ li {
   .footer {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+@media (max-width: 942px) {
+  .nav__list {
+    column-gap: 30px;
+  }
+  .diff__cart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cart {
+    padding-bottom: 40px;
+  }
+  .diff__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ceramics__content {
+    margin-top: 85px;
+  }
+  .ceramics__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ceramics__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 240px;
+  }
+  .card {
+    padding-bottom: 10px;
+  }
+  .ceramics__btn {
+    padding-bottom: 40px;
+  }
+  .products {
+    /* padding-top: 80px; */
+  }
+  .products__title {
+    display: flex;
+    justify-content: center;
+  }
+  .products__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .prod__card {
+    padding-bottom: 10px;
+  }
+  .features__content {
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+  .features__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .features__title {
+    text-align: center;
+  }
+  .features__subtitle {
+    text-align: center;
+  }
+  .features__btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .features__img {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 738px) {
+  header {
+    height: auto;
+  }
+  .avion__desc {
+    margin-top: 0;
+  }
+  .nav {
+    display: flex;
+    justify-content: unset;
+  }
+  .nav__search {
+    display: none;
+  }
+  .nav__logo {
+    padding-left: 24px;
+    flex-grow: 1;
+  }
+  .nav__icons {
+    display: none;
+  }
+  .nav__toggle-mobile {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 15px;
+  }
+  .nav__toggle-mobile img {
+    padding-right: 20px;
+  }
+  .nav {
+    border: none;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__toggle {
+    display: block;
+    order: 2;
+  }
+  .nav--mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    flex-direction: column;
+
+    background-color: azure;
+  }
+  .nav--mobile .nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .nav--mobile .nav__list {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .nav--mobile .nav__icons {
+    display: block;
+    position: fixed;
+    left: 28px;
+    top: 11px;
+  }
+  .nav--mobile .nav__toggle-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav--mobile .nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 11px;
+  }
+  .nav--mobile .nav__list a {
+    font-size: 18px;
+  }
+  .nav--mobile .nav__list li {
+    padding-bottom: 20px;
+  }
+  .nav--mobile .nav__logo p {
+    font-size: 24px;
+  }
+  .nav--mobile .nav__toggle {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  .nav--mobile .nav__toggle-mobile img {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .final__footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .footer__copyright {
+    padding-top: 20px;
+  }
+  .footer__social_networks {
+    display: none;
+  }
+  .diff__content {
+    margin-left: 5px;
+  }
+  .ceramics__content {
+    margin-left: 5px;
+  }
+  .features__title {
+    min-width: auto;
+  }
+  .products__content {
+    margin-left: 5px;
+  }
+  .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 0;
+  }
+  .form__title {
+    text-align: center;
+  }
+}
+@media (max-width: 421px) {
+  .container-right {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .form__input input {
+    padding: 12px 25px 11px 10px;
+  }
+  .footer__input input {
+    padding: 15px 20px 15px 22px;
+  }
+  .features__img img {
+    max-width: 320px;
+  }
+  .avion__desc__img img {
+    max-width: 320px;
   }
 }
