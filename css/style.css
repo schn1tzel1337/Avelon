@@ -696,6 +696,18 @@ li {
 .sorting__row label {
   font-family: Montserrat;
 }
+@media (max-width: 4000px) {
+  .features__row {
+    justify-content: unset;
+    column-gap: 150px;
+  }
+}
+@media (max-width: 1633px) {
+  .features__row {
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+}
 
 @media (max-width: 1345px) {
   .nav__logo p {
