@@ -284,9 +284,6 @@ header {
 
 /* Ceramics */
 
-.ceramics {
-}
-
 .ceramics__content {
   margin-top: 160px;
   margin-left: 80px;
@@ -335,10 +332,6 @@ header {
 }
 
 /* Products */
-
-.products {
-  /* max-height: 744px; */
-}
 
 .products__content {
   margin-top: 120px;
@@ -491,8 +484,7 @@ header {
   padding-left: 80px;
   padding-right: 80px;
 }
-.footer__row {
-}
+
 .footer__content {
   display: flex;
   justify-content: space-between;
@@ -696,7 +688,8 @@ li {
 .sorting__row label {
   font-family: Montserrat;
 }
-@media (max-width: 4000px) {
+
+@media (max-width: 9000px) {
   .features__row {
     justify-content: unset;
     column-gap: 150px;
@@ -944,9 +937,6 @@ li {
     font-size: 12px;
     max-width: 440px;
   }
-  .avion__desc__content {
-    /* padding: 30px; */
-  }
   .avion__desc__img img {
     max-width: 360px;
   }
@@ -1043,9 +1033,6 @@ li {
   }
   .ceramics__btn {
     padding-bottom: 40px;
-  }
-  .products {
-    /* padding-top: 80px; */
   }
   .products__title {
     display: flex;
