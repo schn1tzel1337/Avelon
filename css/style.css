@@ -689,7 +689,7 @@ li {
   font-family: Montserrat;
 }
 
-@media (max-width: 9000px) {
+@media (max-width: 10000px) {
   .features__row {
     justify-content: unset;
     column-gap: 150px;
