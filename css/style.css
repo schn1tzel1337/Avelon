@@ -689,13 +689,13 @@ li {
   font-family: Montserrat;
 }
 
-@media (max-width: 10000px) {
+@media (min-width: 1920px) {
   .features__row {
     justify-content: unset;
     column-gap: 150px;
   }
 }
-@media (max-width: 1633px) {
+@media (max-width: 1618px) {
   .features__row {
     justify-content: space-between;
     column-gap: 20px;
