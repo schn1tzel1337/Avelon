@@ -674,8 +674,9 @@ li {
 .adaptive__buttons {
   display: none;
 }
-.cross {
-  display: none;
+.cross-second {
+  position: fixed;
+  right: 0;
 }
 .sorting__row {
   /* display: flex;
@@ -1225,6 +1226,12 @@ li {
     max-width: 320px;
   }
 }
+@media (max-width: 404px) {
+  .diff__cart {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media (max-width: 1150px) {
   .card-filters img {
     max-width: 260px;
@@ -1328,11 +1335,11 @@ li {
     background-color: azure;
   }
   .sort {
-    padding-left: 200px;
-    padding-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-top: 300px;
   }
   .sorting__title {
     padding-bottom: 20px;
