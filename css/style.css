@@ -70,6 +70,10 @@ header {
   line-height: 22px;
   letter-spacing: 0%;
 }
+.nav__list a:hover {
+  color: rgb(34, 32, 46);
+  border-bottom: 1px solid rgb(34, 32, 46);
+}
 .all__products-title p {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
