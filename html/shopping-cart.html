@@ -30,7 +30,7 @@
               <a href="./../index.html"><p>Avelon</p></a>
             </div>
             <div class="nav__icons">
-              <a href=".././html/shopping-cart.html"
+              <a href=""
                 ><img src="./../img/header/Shopping--cart.svg" alt=""
               /></a>
               <a href=""
@@ -58,151 +58,62 @@
         </div>
       </div>
     </header>
-    <div class="all__products-title">
+    <div class="shopping-cart">
       <div class="container">
-        <div class="all_products-background">
-          <!-- <img src="./img/products/Page Headers.png" alt="" /> -->
-          <p>Все продукты</p>
-        </div>
-      </div>
-    </div>
-    <div class="adaptive__buttons">
-      <div class="container">
-        <div class="buttons__row">
-          <button class="filter__btn">
-            Фильтры
-            <img src="./../img/products__filter-icons/Caret--down.svg" alt="" />
-          </button>
-          <button class="sorting__btn">
-            Сортировка
-            <img src="./../img/products__filter-icons/Caret--down.svg" alt="" />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="sorting__list">
-      <div class="container">
-        <div class="sorting__row">
-          <div class="cross-second">
-            <img src="./../img/filter__krestik/Krestiksvgpng.ru_.svg" alt="" />
+        <div class="shopping-cart-row">
+          <div class="shopping-cart-title">Твоя корзина</div>
+          <div class="shopping-cart-list">
+            <ul>
+              <li>Продукт</li>
+              <li>Всего</li>
+            </ul>
           </div>
-          <div class="sort">
-            <div class="sorting__title">Сортировка</div>
-            <label name="checkbox-02"
-              ><input type="checkbox" /> По возрастанию цены</label
-            >
-            <label name="checkbox-03"
-              ><input type="checkbox" /> По убыванию цены</label
-            >
-            <label name="checkbox-04"
-              ><input type="checkbox" /> По популярности</label
-            >
+          <div class="shopping-cart-card">
+            <div class="shopping-cart-card-row">
+              <div class="shopping-cart-card-img">
+                <img src=".././img/shopping-cart/vase.png" alt="" />
+              </div>
+              <div class="card-row">
+                <div class="card-title">Ваза из серого камня</div>
+                <div class="card-subtitle">
+                  Вечная керамическая ваза из серой глазури.
+                </div>
+                <!-- <div class="quantity">1</div> -->
+                <div class="total-price">£85</div>
+                <div class="quantity-and-total">£85</div>
+              </div>
+            </div>
+          </div>
+          <div class="shopping-cart-card">
+            <div class="shopping-cart-card-row">
+              <div class="shopping-cart-card-img">
+                <img src=".././img/shopping-cart/flower.png" alt="" />
+              </div>
+              <div class="card-row">
+                <div class="card-title">Обычная белая ваза</div>
+                <div class="card-subtitle">Красиво и просто.</div>
+                <!-- <div class="quantity">1</div> -->
+                <div class="total-price">£125</div>
+                <div class="quantity-and-total">£125</div>
+              </div>
+            </div>
+          </div>
+          <div class="subtotal">
+            <div class="subtotal-row">
+              <div class="title-subtotal">Общая стоимость: £210</div>
+              <div class="subtotal-subtitle">
+                Налоги и стоимость доставки рассчитываются при оформлении
+                заказа.
+              </div>
+              <button type="button" class="shopping-cart-button">
+                Перейти к оформлению заказа
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="filters">
-      <div class="container">
-        <div class="filters__row">
-          <div class="filters-items">
-            <div class="cross">
-              <img
-                src="./../img/filter__krestik/Krestiksvgpng.ru_.svg"
-                alt=""
-              />
-            </div>
-            <div class="filter__product">
-              <div class="product__title">Тип продукта</div>
-              <label name="checkbox-01">
-                <input type="checkbox" /> Мебель
-              </label>
-              <label name="checkbox-02"
-                ><input type="checkbox" /> Столовые приборы
-              </label>
-              <label name="checkbox-03"
-                ><input type="checkbox" /> Диваны
-              </label>
-              <label name="checkbox-04"
-                ><input type="checkbox" /> Товары для дома</label
-              >
-              <label name="checkbox-05"
-                ><input type="checkbox" /> Светильники</label
-              >
-              <label name="checkbox-06"
-                ><input type="checkbox" /> Аксессуары</label
-              >
-            </div>
-            <div class="filter__price">
-              <div class="price__title">Цена</div>
-              <label name="checkbox-01">
-                <input type="checkbox" /> 0 - 100
-              </label>
-              <label name="checkbox-02">
-                <input type="checkbox" /> 101 - 250
-              </label>
-              <label name="checkbox-03">
-                <input type="checkbox" /> 250 +
-              </label>
-            </div>
-            <div class="filter__designer">
-              <div class="designer__title">Дизайнер</div>
-              <label name="checkbox-01">
-                <input type="checkbox" /> Robert Smith
-              </label>
-              <label name="checkbox-02">
-                <input type="checkbox" /> Liam Gallagher
-              </label>
-              <label name="checkbox-03">
-                <input type="checkbox" /> Biggie Smalls
-              </label>
-              <label name="checkbox-04">
-                <input type="checkbox" /> Thom Yorke
-              </label>
-            </div>
-          </div>
-          <div class="all__products-cards">
-            <div class="ceramics__card-filters">
-              <div class="card-filters">
-                <img src="./../img/ceramics/Parent.png" alt="" />
-                <h4>The Dandy chair</h4>
-                <p>£250</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics/Photo.png" alt="" />
-                <h4>Rustic Vase Set</h4>
-                <p>£155</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics//Photo (1).png" alt="" />
-                <h4>The Silky Vase</h4>
-                <p>£125</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics/Photo (2).png" alt="" />
-                <h4>The Lucy Lamp</h4>
-                <p>£399</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics/Photo (2).png" alt="" />
-                <h4>The Lucy Lamp</h4>
-                <p>£399</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics/Photo (2).png" alt="" />
-                <h4>The Lucy Lamp</h4>
-                <p>£399</p>
-              </div>
-              <div class="card-filters">
-                <img src="./../img/ceramics/Photo (2).png" alt="" />
-                <h4>The Lucy Lamp</h4>
-                <p>£399</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="footer">
       <div class="container">
         <div class="footer__row">
